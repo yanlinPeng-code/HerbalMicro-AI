@@ -1,11 +1,8 @@
 import uvicorn
-from sqlmodel import SQLModel
 
-from config import Settings
 from internal.router import Router
 from internal.http import Http
 from pkg.sqlalchemy import SQLAlchemy
-
 from .module import injector
 app=Http(
     title="HerbalMicro-AI",
