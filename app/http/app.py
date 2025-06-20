@@ -4,6 +4,7 @@ from internal.router import Router
 from internal.http import Http
 from pkg.sqlalchemy import SQLAlchemy
 from .module import injector
+
 app=Http(
     title="HerbalMicro-AI",
     router=injector.get(Router),

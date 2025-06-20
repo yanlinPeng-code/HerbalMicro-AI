@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from sqlmodel import SQLModel
 from internal.router import Router
 from pkg.sqlalchemy import SQLAlchemy
-
+from internal.model import user
 
 class Http(FastAPI):
     """Http服务引擎"""
