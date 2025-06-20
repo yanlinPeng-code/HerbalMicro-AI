@@ -1,6 +1,9 @@
 from pydantic import EmailStr
 from sqlmodel import SQLModel,Field
 from .base import Base
+
+
+
 class User(Base,table=True):
       email:EmailStr=Field(unique=True,index=True,max_length=255)
       password:str=Field(min_length=8,max_length=15)
